@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Container, Row, Col, Button, Modal } from 'react-bootstrap';
+import {Button, Modal } from 'react-bootstrap';
 import Draggable from 'react-draggable';
 import './App.css'
 import './ResizableSections.css'; // Import your CSS file
@@ -30,9 +30,14 @@ const ResizableSections = () => {
   return (
     <>
   
+
+      <div className='navbar'>
+        <div className='save-btn'>
       <Button variant="primary" onClick={handleSaveButtonClick}>
         Save
       </Button>
+      </div>
+      </div>
 
       {/* Draggable Popup */}
       <Modal show={showModal} onHide={handleModalClose} centered>
