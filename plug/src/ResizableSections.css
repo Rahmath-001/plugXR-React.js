@@ -19,7 +19,7 @@
 }
 
 .resizer {
-  width: 5px;
+  width: 10px;
   cursor: col-resize;
   background-color: #ccc;
   z-index: 1;
