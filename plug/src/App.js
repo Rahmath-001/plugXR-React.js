@@ -41,10 +41,7 @@ const ResizableSections = () => {
 
       {/* Draggable Popup */}
       <Modal show={showModal} onHide={handleModalClose} centered>
-        <Modal.Header closeButton={false} >
-          <Modal.Title>Popup</Modal.Title>
-        </Modal.Header>
-        <Modal.Body>
+        <Modal.Body closeButton={false}>
           <Draggable>
             <div className="popup-container">
               <div className="popup-square">
@@ -58,9 +55,21 @@ const ResizableSections = () => {
         </Modal.Body>
       </Modal>
 
-<div className="container">
-      <div className="section" style={{ flex: sectionWidths[0] }}>
-        Section 1
+<div className="container conatiner-1">
+      <div className="section section-1" style={{ flex: sectionWidths[0] }}>
+        <div className="small-cards">
+      {/* Add 5 small cards here */}
+      <div className="small-card">Card 1</div>
+      <div className="small-card">Card 2</div>
+      <div className="small-card">Card 3</div>
+      <div className="small-card">Card 4</div>
+      <div className="small-card">Card 5</div>
+      <div className="small-card">Card 6</div>
+      <div className="small-card">Card 7</div>
+      <div className="small-card">Card 8</div>
+      <div className="small-card">Card 9</div>
+      <div className="small-card">Card 10</div>
+    </div>
       </div>
       <div
         className="resizer resizer-right"
@@ -113,7 +122,7 @@ const ResizableSections = () => {
           window.addEventListener('mouseup', handleMouseUp);
         }}
       ></div>
-      <div className="section" style={{ flex: sectionWidths[2] }}>
+      <div className="section section-3" style={{ flex: sectionWidths[2] }}>
         Section 3
       </div>
     </div>

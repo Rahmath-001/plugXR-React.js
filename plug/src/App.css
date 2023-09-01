@@ -1,4 +1,6 @@
 
+/*  N A V  B A R */
+
 .navbar{
   background-color: lightblue;
   border-radius: 10px;
@@ -25,7 +27,9 @@
   width: 85px;
 }
 
-/* POP - UP  */
+
+
+/* POP-UP */
 .resizable-col {
   border: 1px solid #ccc;
   resize: horizontal;
@@ -33,21 +37,36 @@
 }
 
 .popup-container {
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 .popup-square {
   width: 200px;
   height: 200px;
+  padding: 12px;
   background-color: lightblue;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   cursor: move;
-  position: absolute;
+  position: relative;
+  border: 2px solid black;
 }
 
 .close-button {
-  margin-top: 10px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 50px;
+  height: 40px;
+  border-radius: 50%; 
+  font-size: 12px;
 }
